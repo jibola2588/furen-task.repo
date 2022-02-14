@@ -1,0 +1,357 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+}
+nav {
+  background: #fff;
+  height: 80px;
+  width: 100%;
+}
+label.logo {
+  color: #000;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: lighter;
+}
+nav ul {
+  float: right;
+  margin-right: 40px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: #000;
+  font-size: 17px;
+  text-transform: capitalize;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+a.active,
+a:hover {
+  background: #e0315a;
+  transition: 0.5s;
+  text-decoration: none;
+  color: #fff;
+}
+.checkBtn {
+  color: #000;
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  padding-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+@media (max-width: 925px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkBtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #5a5959;
+    top: 80px;
+    left: -100%;
+    transition: all 0.5s;
+    text-align: center;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+    text-decoration: none;
+  }
+  nav ul li a {
+    font-size: 20px;
+    color: #fff;
+  }
+  a.active,
+  a:hover {
+    background: none;
+    color: #e0315a;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+@media (max-width: 400px) {
+  label.logo {
+    padding-right: 60px;
+    padding-left: 30px;
+  }
+}
+
+/* End of nav */
+header {
+  clear: both;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/images/int1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: calc(100vh - 80px);
+  box-sizing: border-box;
+}
+@media (max-width: 500px) {
+  .header-inner {
+    box-sizing: border-box;
+    padding-top: 50px;
+    color: #fff;
+  }
+  header h5 {
+    font-size: 18px;
+  }
+  header p {
+    font-size: 13px;
+    margin-bottom: 0px;
+  }
+  .address,
+  .email,
+  .phone {
+    padding-top: 20px;
+  }
+}
+@media (min-width: 760px) {
+  header {
+    clear: both;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/images/int1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 80px);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-inner {
+    box-sizing: border-box;
+    color: #fff;
+  }
+  header h5 {
+    font-size: 35px;
+  }
+  header p {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .detail {
+    padding-top: 30px;
+    display: flex;
+  }
+  .detail h5 {
+    font-size: 25px;
+  }
+  .address,
+  .email,
+  .phone {
+    padding-left: 25px;
+  }
+}
+@media (min-width: 1000px) {
+  header {
+    clear: both;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/images/int1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 80px);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-inner {
+    box-sizing: border-box;
+    color: #fff;
+  }
+  header h5 {
+    font-size: 55px;
+  }
+  header p {
+    font-size: 25px;
+    margin-bottom: 0px;
+  }
+  .detail {
+    padding-top: 60px;
+    display: flex;
+  }
+  .detail h5 {
+    font-size: 35px;
+  }
+  .address,
+  .email,
+  .phone {
+    padding-left: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    clear: both;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/images/int1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 80px);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-inner {
+    box-sizing: border-box;
+    color: #fff;
+  }
+  header h5 {
+    font-size: 40px;
+  }
+  header p {
+    font-size: 25px;
+    margin-bottom: 0px;
+  }
+  .detail {
+    display: flex;
+    justify-content: space-around;
+  }
+  .detail h5 {
+    font-size: 35px;
+  }
+  .detail p {
+    font-size: 25px;
+  }
+  .address,
+  .email,
+  .phone {
+    padding-left: 90px;
+  }
+}
+/* End of header */
+
+.footer {
+  background: #f2f2f2;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.footer div ol li a {
+  color: #000;
+  line-height: 80px;
+  font-size: 18px;
+}
+.footer div ol li a.active {
+  padding: 10px 10px;
+  background-color: #e0315a;
+  color: #fff;
+}
+.footer a:hover {
+  background-color: #f2f2f2;
+}
+@media (max-width: 500px) {
+  .footer div {
+    padding-left: 20px;
+  }
+  label.last {
+    color: #000;
+    font-size: 35px;
+    line-height: 80px;
+    font-weight: lighter;
+  }
+}
+@media (min-width: 760px) {
+  label.last {
+    color: #000;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: lighter;
+  }
+  .footer div {
+    display: flex;
+  }
+  .footer div ol {
+    display: flex;
+    align-items: center;
+  }
+  .footer div ol li {
+    padding-left: 10px;
+  }
+}
+@media (min-width: 1000px) {
+  label.last {
+    color: #000;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: lighter;
+  }
+  .footer div {
+    display: flex;
+  }
+  .footer div ol {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer div ol li a {
+    color: #000;
+    line-height: 80px;
+    font-size: 20px;
+  }
+  .footer div ol li {
+    padding-left: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  label.last {
+    color: #000;
+    font-size: 45px;
+    line-height: 80px;
+  }
+  .footer div {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer div ol {
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+  }
+  .footer div ol li {
+    padding-left: 55px;
+  }
+  .footer div ol li a {
+    color: #000;
+    line-height: 80px;
+    font-size: 15px;
+  }
+  .footer {
+    background: #f2f2f2;
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+  .footer div {
+    padding-top: 100px;
+  }
+}
